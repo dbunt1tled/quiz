@@ -1,0 +1,18 @@
+RewriteEngine on
+
+#RewriteCond %{HTTPS} off
+#RewriteCond %{REQUEST_URI} !robots.txt
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+<FilesMatch "\.(jpg|css|gif|png|ico|js)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+
+
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
