@@ -55,19 +55,20 @@ class QuizController extends Controller
            $questionsPost=$post['quiz'];
            $countAll=0;
            $countTrue=0;
-
            foreach ($model->questions as $question){
                 if((isset($questionsPost[$question->name])) && ($questionsPost[$question->name]==$question->answer)  ){
                     $countTrue++;
                 }
                 $countAll++;
            }
+
             $highscore = Highscore::findOne(['user' => Yii::$app->session['userLoginId'], 'quiz' => $id]);
 
             if(is_null($highscore)){
                 $highscore = new Highscore();
             }
-            $highscore->score = ceil($countTrue / $countAll) * 100;
+            $highscore->score = ceil($countTrue / $countAll * 100);
+
             $highscore->user = Yii::$app->session['userLoginId'];
             $highscore->quiz = $id;
             if ($highscore->validate()&& $highscore->save()) {
