@@ -1,9 +1,11 @@
 **QUIZ-Test Yii 2 Basic Project**
+
 **===========================================**
 
 **Install via Composer**
 
 `composer global require "fxp/composer-asset-plugin:^1.3.1"`
+
 `composer create-project dbunt1tled/quiz-test`
 
 `composer update`
