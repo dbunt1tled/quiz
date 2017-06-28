@@ -2,17 +2,12 @@
 
 **===========================================**
 
-**Install via Composer**
-
-`composer global require "fxp/composer-asset-plugin:^1.3.1"`
-
-`composer create-project dbunt1tled/quiz-test`
-
-`composer update`
 
 **Install via Github**
 
-`git clone https://github.com/dbunt1tled/quiz-test.git ./`
+`git clone https://github.com/dbunt1tled/quiz.git ./`
+
+`composer update`
 
 **CONFIGURATION**
 

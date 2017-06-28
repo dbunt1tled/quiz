@@ -1,11 +1,15 @@
 {
     "name": "dbunt1tled/quiz",
     "description": "QUIZ-test",
-    "keywords": ["yii2", "framework", "quiz"],
+    "keywords": ["yii2", "quiz", "basic"],
     "homepage": "https://github.com/dbunt1tled/quiz",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/dbunt1tled/quiz"
     },
     "minimum-stability": "stable",
@@ -51,11 +55,5 @@
                 "config/web.php"
             ]
         }
-    },
-    "repositories":[
-        {
-            "type":"git",
-            "url":"https://github.com/dbunt1tled/quiz"
-        }
-    ]
+    }
 }
