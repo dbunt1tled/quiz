@@ -33,10 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
         color: #000;
         border: none;
     }
-    .btn:active, .btn.active{
-        background-color: #d4d4d4;
-        border-color: #8c8c8c;
-        color: #333;
+    .btn:active,.btn:hover, .btn-default:active:hover, .btn-default.active:hover, .btn.active,  .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default.focus:active, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus{
+        background-color: #FFC715;
+        border-color: #FFC715;
+        color: #fff;
     }
 </style>
 <div class="site-login">
